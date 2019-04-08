@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Schedule</string>
+    <string name="title_activity">Select Opction</string>
+    <string name="create">Create</string>
+    <string name="list">List</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="cellphone">Cellphone</string>
+    <string name="save">Save</string>
+    <string name="done">Saved Successfully</string>
+    <string name="no_records">No Records to Show</string>
+
+
+    <string-array name="Menu">
+        <item>@string/create</item>
+        <item>@string/list</item>
+    </string-array>
 </resources>

@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "984235115867",
+    "firebase_url": "https://schedule-b941c.firebaseio.com",
+    "project_id": "schedule-b941c",
+    "storage_bucket": "schedule-b941c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984235115867:android:29f7eefcbe9a9d49",
+        "android_client_info": {
+          "package_name": "firebase.com.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984235115867-5e5mu241bkkocl92a0qd46gvss4chupa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "firebase.com.app",
+            "certificate_hash": "bfa6ded6f4f6ddd7e0346a7c38fa635cb3e66d39"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkvlyIdN02C1xZ8addnPaah10xulZyJv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984235115867-ch9nr5lgnjadan3so4hekp8acc4k0k01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
