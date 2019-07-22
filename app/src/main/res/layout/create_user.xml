@@ -7,64 +7,59 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="715dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/Title"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/create_contact"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorPrimary" />
 
         <EditText
             android:id="@+id/TxtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="@string/name"
-            android:inputType="textPersonName"
-            android:padding="24dp" />
+            android:padding="20dp" />
 
         <EditText
             android:id="@+id/TxtLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="@string/last_name"
-            android:inputType="textPersonName"
-            android:padding="24dp" />
-
-        <EditText
-            android:id="@+id/TxtPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/phone"
-            android:inputType="phone"
-            android:padding="24dp" />
+            android:padding="20dp" />
 
         <EditText
             android:id="@+id/TxtCellphone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="@string/cellphone"
-            android:inputType="phone"
-            android:padding="24dp" />
+            android:inputType="number"
+            android:padding="20dp" />
 
-        <Button
-            android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Colored"
+        <EditText
+            android:id="@+id/TxtPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Save"
-            android:padding="30dp"
+            android:hint="@string/phone"
+            android:inputType="number"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/BtnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/custom_btncreate"
+            android:padding="20dp"
             android:text="@string/save"
-            android:textSize="24sp" />
+            android:textColor="@android:color/background_light" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

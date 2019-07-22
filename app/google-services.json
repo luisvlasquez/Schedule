@@ -21,6 +21,10 @@
             "package_name": "firebase.com.app",
             "certificate_hash": "bfa6ded6f4f6ddd7e0346a7c38fa635cb3e66d39"
           }
+        },
+        {
+          "client_id": "984235115867-ch9nr5lgnjadan3so4hekp8acc4k0k01.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [

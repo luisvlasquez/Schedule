@@ -5,44 +5,46 @@ import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
+import com.google.firebase.database.DatabaseReference;
 
-public class MainActivity extends AppCompatActivity {
-    private ListView LV;
-    private String Opc[];
-    private android.content.res.Resources Resources;
+
+
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    DatabaseReference RootReference;
+    Button BtnCreate,BtnList;
     private Intent In;
-
+    private Resources Resourses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BtnCreate = findViewById(R.id.BtnCreate);
+        BtnCreate.setOnClickListener(this);
+        BtnList = findViewById(R.id.BtnList);
+        BtnList.setOnClickListener(this);
 
-        LV = (ListView) findViewById(R.id.Options);
-        Resources = this.getResources();
-        Opc = Resources.getStringArray(R.array.Menu);
-        ArrayAdapter<String> Adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Opc);
-        LV.setAdapter(Adapter);
+    }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.BtnCreate:
+                In = new Intent(MainActivity.this, CreateContact.class);
+                startActivity(In);
+                break;
 
-        LV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        In = new Intent(MainActivity.this, CreateContact.class);
-                        startActivity(In);
-                        break;
+            case R.id.BtnList:
+                In = new Intent(MainActivity.this, DataRequest.class);
+                startActivity(In);
+        }
+    }
 
-                    case 1:
-                        In = new Intent(MainActivity.this, ListContact.class);
-                        startActivity(In);
-                        break;
-                }
-            }
-        });
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
+
 
